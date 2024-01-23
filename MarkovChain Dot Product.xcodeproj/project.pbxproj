@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B5AEC47D2B5ED9B000E020D8 /* MarkovModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AEC47C2B5ED9B000E020D8 /* MarkovModel.m */; };
+		B5AEC47F2B5FF84900E020D8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B5AEC47E2B5FF84900E020D8 /* LICENSE */; };
 		B5E2ECA12B5E67DA0001359F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E2ECA02B5E67DA0001359F /* AppDelegate.m */; };
 		B5E2ECA42B5E67DA0001359F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E2ECA32B5E67DA0001359F /* ViewController.m */; };
 		B5E2ECA62B5E67DB0001359F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E2ECA52B5E67DB0001359F /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		B5AEC4792B5ED91400E020D8 /* MarkovModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkovModel.h; sourceTree = "<group>"; };
 		B5AEC47C2B5ED9B000E020D8 /* MarkovModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkovModel.m; sourceTree = "<group>"; };
+		B5AEC47E2B5FF84900E020D8 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B5E2EC9C2B5E67DA0001359F /* MarkovChain Dot Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MarkovChain Dot Product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E2EC9F2B5E67DA0001359F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5E2ECA02B5E67DA0001359F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		B5E2EC932B5E67DA0001359F = {
 			isa = PBXGroup;
 			children = (
+				B5AEC47E2B5FF84900E020D8 /* LICENSE */,
 				B5E2EC9E2B5E67DA0001359F /* MarkovChain Dot Product */,
 				B5E2ECB42B5E67DC0001359F /* MarkovChain Dot ProductTests */,
 				B5E2ECBE2B5E67DC0001359F /* MarkovChain Dot ProductUITests */,
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AEC47F2B5FF84900E020D8 /* LICENSE in Resources */,
 				B5E2ECA62B5E67DB0001359F /* Assets.xcassets in Resources */,
 				B5E2ECA92B5E67DB0001359F /* Main.storyboard in Resources */,
 			);

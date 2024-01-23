@@ -19,16 +19,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DCC9DC22-C76E-4534-A353-44B1FBF4A4C2"
+            uuid = "58F8FB31-B3A1-4BFB-9498-B1C0CEC2893D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarkovChain Dot Product/MarkovModel.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "-cosineSimilarity:"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "+wordLikeFrom:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
