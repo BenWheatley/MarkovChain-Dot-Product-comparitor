@@ -8,7 +8,7 @@ Assuming I've not gotten confused (which is always a possibility, especially for
 
 <img width="198" alt="Screenshot 2024-01-23 at 14 54 58" src="https://github.com/BenWheatley/MarkovChain-Dot-Product-comparitor/assets/12123132/5037257e-8d43-45b6-9b79-4a11796259a4">
 
-Then divide by the magnitude of each Markov model… (hang on, the transition vectors are normalised already, so the magnitudes should be equal to the number of non-terminal symbols… hmm, perhaps this is why they're so much more dissimilar than I was expecting?)… to get the cosine of the angles between the vectors that the Markov chains represent.
+Then divide by the magnitude of each Markov model… (hang on, the transition vectors are normalised already, so the magnitudes should be equal to the number of non-terminal symbols — perhaps this is why they're so much more dissimilar than I was expecting?)… to get the cosine of the angles between the vectors that the Markov chains represent.
 
 # Why make it at all?
 
