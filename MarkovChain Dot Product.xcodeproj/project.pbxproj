@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5AEC47D2B5ED9B000E020D8 /* MarkovModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AEC47C2B5ED9B000E020D8 /* MarkovModel.m */; };
 		B5E2ECA12B5E67DA0001359F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E2ECA02B5E67DA0001359F /* AppDelegate.m */; };
 		B5E2ECA42B5E67DA0001359F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E2ECA32B5E67DA0001359F /* ViewController.m */; };
 		B5E2ECA62B5E67DB0001359F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E2ECA52B5E67DB0001359F /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5AEC4792B5ED91400E020D8 /* MarkovModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkovModel.h; sourceTree = "<group>"; };
+		B5AEC47C2B5ED9B000E020D8 /* MarkovModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkovModel.m; sourceTree = "<group>"; };
 		B5E2EC9C2B5E67DA0001359F /* MarkovChain Dot Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MarkovChain Dot Product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E2EC9F2B5E67DA0001359F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5E2ECA02B5E67DA0001359F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				B5E2ECA02B5E67DA0001359F /* AppDelegate.m */,
 				B5E2ECA22B5E67DA0001359F /* ViewController.h */,
 				B5E2ECA32B5E67DA0001359F /* ViewController.m */,
+				B5AEC4792B5ED91400E020D8 /* MarkovModel.h */,
+				B5AEC47C2B5ED9B000E020D8 /* MarkovModel.m */,
 				B5E2ECA52B5E67DB0001359F /* Assets.xcassets */,
 				B5E2ECA72B5E67DB0001359F /* Main.storyboard */,
 				B5E2ECAA2B5E67DB0001359F /* main.m */,
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E2ECA42B5E67DA0001359F /* ViewController.m in Sources */,
+				B5AEC47D2B5ED9B000E020D8 /* MarkovModel.m in Sources */,
 				B5E2ECAB2B5E67DB0001359F /* main.m in Sources */,
 				B5E2ECA12B5E67DA0001359F /* AppDelegate.m in Sources */,
 			);
