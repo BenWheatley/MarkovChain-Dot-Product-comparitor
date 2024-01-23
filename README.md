@@ -2,13 +2,13 @@
 
 A Markov chain is a very simple language model: For any given symbol (usually a word), what symbols come next, and with what probabilities?
 
-This generates a Markov model for two documents, then does a dot-product to compare them. As any given symbols might not be in both documents, and two documents that don't share any symbols are obviously orthogonal, this dot product is calculated with the assumption that:
-
-Assuming I've not gotten confused (which is always a possibility, especially for a solo project like this):
+This generates a Markov model for two documents, then does a dot-product to compare them. As any given symbols might not be in both documents, and two documents that don't share any symbols are obviously orthogonal, this dot product is calculated with:
 
 <img width="198" alt="Screenshot 2024-01-23 at 14 54 58" src="https://github.com/BenWheatley/MarkovChain-Dot-Product-comparitor/assets/12123132/5037257e-8d43-45b6-9b79-4a11796259a4">
 
 Then divide by the magnitude of each Markov model… (hang on, the transition vectors are normalised already, so the magnitudes should be equal to the number of non-terminal symbols — perhaps this is why they're so much more dissimilar than I was expecting?)… to get the cosine of the angles between the vectors that the Markov chains represent.
+
+(Assuming I've not gotten confused, which is always a possibility, especially for a solo project like this).
 
 # Why make it at all?
 
