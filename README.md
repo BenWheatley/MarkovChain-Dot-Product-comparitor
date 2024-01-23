@@ -22,4 +22,4 @@ The long answer is: within a language, almost all the documents I tried were in 
 
 Someone was interested in interviewing me for a Mac desktop job with ObjC code, and I've not done ObjC for 5 years so I thought "this project I've had on the back burner for ages, I'll do that in ObjC and for macOS".
 
-I may redo in JS or something later. But only if I can make a version which is more useful than to falisify my hypothesis about this being useful.
+I may redo in something else later, perhaps JS so anyone can use it without a mac or iDevice. But only if I can make a version which is more useful than to falisify my hypothesis about this being useful.
