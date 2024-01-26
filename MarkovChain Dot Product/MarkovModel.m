@@ -111,10 +111,12 @@
 			NSDictionary<NSString *, NSNumber *> *selfTransitions = self.markovChain[key];
 			NSDictionary<NSString *, NSNumber *> *otherTransitions = otherModel.markovChain[key];
 			
-			for (NSString *targetState in selfTransitions.allKeys) {
+			NSSet<NSString*> *unionOfAllTargetKeys =
+				[[NSSet setWithArray: selfTransitions.allKeys]
+				 setByAddingObjectsFromArray: otherTransitions.allKeys];
+			for (NSString *targetState in unionOfAllTargetKeys) {
 				float selfProbability = [selfTransitions[targetState] floatValue] ?: 0;
 				float otherProbability = [otherTransitions[targetState] floatValue] ?: 0;
-				// Keys that fail nullity tests in the other direction would also add zero to these sums
 				
 				dotProductRollingSum += selfProbability * otherProbability;
 				magnitudeSquaredSelfRollingSum += selfProbability * selfProbability;
