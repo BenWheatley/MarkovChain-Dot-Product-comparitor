@@ -39,17 +39,20 @@ def plot_similarity(dimensions, avg_similarities):
     model = LinearRegression()
     model.fit(X_poly, y)
     y_pred = model.predict(X_poly)
-    plt.plot(X, y_pred, color='red', label='Best-fitting Monomial')
+    plt.plot(X, y_pred, color='red', label='Best-fitting Polynomial')
+
+    # Print coefficients
+    print("Coefficients:", model.coef_)
 
     plt.legend()
     plt.show()
 
 # Parameters
-num_dimensions = 10  # Number of dimensions to consider
-num_pairs = 1000     # Number of random vector pairs to generate for each dimension
+num_dimensions = 30  # Number of dimensions to consider
+num_pairs = 10000     # Number of random vector pairs to generate for each dimension
 
 # Calculate average similarities
 avg_similarities = calculate_average_similarity(num_dimensions, num_pairs)
 
-# Plot the results
+# Plot the results and print coefficients
 plot_similarity(num_dimensions, avg_similarities)
