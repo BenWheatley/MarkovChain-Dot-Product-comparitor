@@ -2,8 +2,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.linear_model import LinearRegression
+from scipy.optimize import curve_fit
 
 def generate_random_unit_vector(dimension):
     vec = np.random.randn(dimension)
@@ -24,6 +23,9 @@ def calculate_average_similarity(dimensions, num_pairs):
         avg_similarities.append(avg_similarity)
     return avg_similarities
 
+def exponential_func(x, a, b):
+    return a * np.exp(b * x)
+
 def plot_similarity(dimensions, avg_similarities):
     plt.plot(range(1, dimensions + 1), avg_similarities, marker='o', label='Data')
     plt.xlabel('Dimension')
@@ -31,18 +33,10 @@ def plot_similarity(dimensions, avg_similarities):
     plt.title('Average Cosine Similarity for Different Dimensions')
     plt.grid(True)
 
-    # Polynomial regression
-    poly = PolynomialFeatures(degree=3)  # You can adjust the degree of the polynomial
-    X = np.array(range(1, dimensions + 1)).reshape(-1, 1)
-    X_poly = poly.fit_transform(X)
-    y = np.array(avg_similarities)
-    model = LinearRegression()
-    model.fit(X_poly, y)
-    y_pred = model.predict(X_poly)
-    plt.plot(X, y_pred, color='red', label='Best-fitting Polynomial')
-
-    # Print coefficients
-    print("Coefficients:", model.coef_)
+    # Fit exponential curve
+    popt, pcov = curve_fit(exponential_func, range(1, dimensions + 1), avg_similarities)
+    y_fit = exponential_func(range(1, dimensions + 1), *popt)
+    plt.plot(range(1, dimensions + 1), y_fit, color='red', label='Exponential Fit')
 
     plt.legend()
     plt.show()
@@ -54,5 +48,5 @@ num_pairs = 10000     # Number of random vector pairs to generate for each dimen
 # Calculate average similarities
 avg_similarities = calculate_average_similarity(num_dimensions, num_pairs)
 
-# Plot the results and print coefficients
+# Plot the results with exponential fit
 plot_similarity(num_dimensions, avg_similarities)
